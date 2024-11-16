@@ -6,7 +6,14 @@ exports.socket = (...args) => {
         value: 'WASocket',
         configurable: true,
     });
-    return core;
+    core.parseMention = (text = "") => {
+     return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + "@s.whatsapp.net");
+    };
+    core.reply = async (jid, text, quoted, options) => {
+     await core.sendPresenceUpdate('composing', jid)
+     return core.sendMessage(jid, {text: text, mentions: core.parseMention(text), ...options}, { quoted})
+   }
+  return core;
 };
 
 exports.smsg = (core, m) => {
