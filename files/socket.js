@@ -12,7 +12,7 @@ exports.socket = (...args) => {
     core.reply = async (jid, text, quoted, options) => {
      await core.sendPresenceUpdate('composing', jid)
      return core.sendMessage(jid, {text: text, mentions: core.parseMention(text), ...options}, { quoted})
-   }
+   };
   return core;
 };
 
