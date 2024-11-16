@@ -64,7 +64,11 @@ class WhatsAppBot {
                 }
                 });
             core.ev.on('creds.update', saveCreds);
-            core.ev.on('messages.upsert', (messages) => {});
+            core.ev.on('messages.upsert', (chatUpdate) => {
+               const m = chatUpdate.messages[0];
+                if (!m.message) return;
+               smsg(core, m);
+            });
         }
     }
 
