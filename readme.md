@@ -1,10 +1,13 @@
-# Simple WhatsApp Bot (Pairing Only)
+# Simple WhatsApp Bot (Polosan)
 
-_Script_ bot WhatsApp sederhana ini masih dalam tahap awal pengembangan dan saat ini hanya memiliki fungsi untuk melakukan _pairing_ dengan akun WhatsApp Anda.
-
-## Fitur
-
-*   Melakukan _pairing_ dengan akun WhatsApp melalui scan QR code.
+_Script Bot WhatsApp Ini Gratis_
+Type: Case 
+database: X
+auth: internal 
+fitur: 3 + 3 (tes,nsfw,get) dan eval/execute
+Creator: Dwi-merajah
+# Note
+* Sisanya buat sendiri (database dll) sudah saya sediakan socket (untuk menambahkan function sendButton/List dll) tinggal ikutin yang lain sudah lengkap function dll sisanya mandiri yo
 
 ## Instalasi
 ```javascript
