@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Dwi-Merajah",
+  "author": "Fandirr-Store",
   "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "latest",
