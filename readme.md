@@ -11,7 +11,7 @@ Creator: Dwi-merajah
 
 ## Instalasi
 ```javascript
-1.  git clone https://github.com/Dwi-Merajah/base-pairing
+1.  git clone https://github.com/zmanias/base-pairing
 2.  cd /base-pairing
 3.  yarn install
 4.  node index.js
